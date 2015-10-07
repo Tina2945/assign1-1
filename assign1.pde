@@ -1,5 +1,3 @@
-/* please implement your assign1 code in this file. */
-
 PImage bg1;
 PImage bg2;
 PImage enemy;
@@ -11,17 +9,23 @@ int b=0;
 int t=0;
 void setup () {
   size(640,480) ; 
-  
+  bg1=loadImage("img/bg1.png"); 
+  bg2=loadImage("img/bg2.png");
+  enemy= loadImage("img/enemy.png");
+ hp=loadImage("img/hp.png");
+ fighter= loadImage("img/fighter.png");
+ treasure=loadImage("img/treasure.png");
 }
+
 
 void draw() {
   
   
    
   background(0);
-  bg1=loadImage("bg1.png");
+ 
   image(bg1,b,0);
-  bg2=loadImage("bg2.png");
+  
   image(bg2,t-640,0);
   
      b=b+5;
@@ -35,19 +39,19 @@ void draw() {
      
    
    
-  enemy= loadImage("enemy.png");
+  
   image(enemy,x,150);
   x=x+3;
   x%=640;
  
    fill(247,7,7);
   rect(10,10,100,10);
- fighter= loadImage("fighter.png");
+ 
   image(fighter,450,300);
-   hp=loadImage("hp.png");
+  
   image(hp,1,1);
   
-  treasure=loadImage("treasure.png");
+  
   image(treasure,600,400);
   
  
