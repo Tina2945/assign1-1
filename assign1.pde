@@ -7,6 +7,9 @@ PImage treasure;
 int x=0;
 int b=0;
 int t=0;
+int x1=floor(random(200));
+int xx1=floor(random(600));
+int yy1=floor(random(300));
 void setup () {
   size(640,480) ; 
   bg1=loadImage("img/bg1.png"); 
@@ -45,14 +48,14 @@ void draw() {
   x%=640;
  
    fill(247,7,7);
-  rect(10,10,100,10);
+  rect(10,10,x1,10);
  
   image(fighter,450,300);
   
   image(hp,1,1);
   
   
-  image(treasure,600,400);
+  image(treasure,xx1,yy1);
   
  
   
